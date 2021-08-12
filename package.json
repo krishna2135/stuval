@@ -1,0 +1,138 @@
+{
+  "name": "react-platter",
+  "version": "1.0.0",
+  "description": "A react starter kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bnr dev",
+    "build": "bnr build",
+    "lint": "lint-staged",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+  },
+  "pre-commit": [
+    "pretty",
+    "lint"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "betterScripts": {
+    "dev": {
+      "command": "webpack-dev-server --hot --mode development",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "build": {
+      "command": "webpack --mode production",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "keywords": [
+    "react",
+    "starter",
+    "kit"
+  ],
+  "author": "Aatif Bandet",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "app-root-dir": "^1.0.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "canvasjs": "^1.8.3",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.0.0",
+    "emotion": "^10.0.27",
+    "font-awesome": "^4.7.0",
+    "froala-editor": "^3.1.1-2",
+    "fs": "^0.0.1-security",
+    "highcharts": "^8.2.0",
+    "highcharts-more": "^0.1.7",
+    "highcharts-react-official": "^3.0.0",
+    "history": "^4.10.1",
+    "hoist-non-react-statics": "^3.3.2",
+    "invariant": "^2.2.4",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.15",
+    "mdbreact": "^4.27.0",
+    "popper.js": "^1.16.1",
+    "prop-types": "^15.7.2",
+    "qs": "^6.9.4",
+    "react": "^16.13.1",
+    "react-accessible-accordion": "^3.3.0",
+    "react-apexcharts": "^1.3.7",
+    "react-bootstrap": "^1.0.1",
+    "react-bootstrap-tabs": "^2.0.0",
+    "react-circular-progressbar": "^2.0.3",
+    "react-color": "^2.18.1",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-d3-speedometer": "^0.14.1",
+    "react-dom": "^16.13.1",
+    "react-file-drop": "^3.0.7",
+    "react-fontawesome": "^1.7.1",
+    "react-froala-wysiwyg": "^3.1.1-1",
+    "react-helmet": "^6.0.0",
+    "react-helmet-async": "^1.0.6",
+    "react-horizontal-stacked-bar-chart": "^8.15.2",
+    "react-hot-loader": "^4.12.21",
+    "react-html-parser": "^2.0.2",
+    "react-js-pagination": "^3.0.3",
+    "react-loadable": "^5.5.0",
+    "react-loader-spinner": "^3.1.14",
+    "react-onclickoutside": "^6.9.0",
+    "react-quill": "^1.3.5",
+    "react-redux": "^7.2.0",
+    "react-render-html": "^0.6.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
+    "react-thermometer": "^0.0.3",
+    "read-excel-file": "^4.0.7",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "regenerator-runtime": "^0.13.5",
+    "semantic-ui-react": "^2.0.0",
+    "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "assets-webpack-plugin": "^3.9.12",
+    "autoprefixer": "^9.8.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-emotion": "^10.0.33",
+    "better-npm-run": "^0.1.1",
+    "copy-webpack-plugin": "^6.0.1",
+    "css-loader": "^3.5.3",
+    "dotenv-webpack": "^1.8.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "file-loader": "^6.0.0",
+    "fs-extra": "^9.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "lint-staged": "^10.2.6",
+    "postcss-loader": "^3.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.1.2",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

@@ -1,0 +1,82 @@
+.challange-container input{
+    padding:5px 0;
+    margin-bottom: 30px;
+}
+.challange-container input,
+.box textarea{
+    width:100%;
+    /* box-sizing: border-box; */
+    box-shadow: none;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #999 !important;
+}
+.challange-container textarea{
+    margin-left: 20px;
+}
+.challange-container form div{
+    position: relative;
+}
+.challange-container form div label{
+    position: absolute; 
+    top:10x; 
+    left: 0px;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+
+ }
+ .challange-container input:focus~ label,
+ .challange-container textarea:focus~label,
+ .challange-container input:valid~ label,
+ .challange-container textarea:valid~label
+ 
+ {
+top:-12px;
+left: 0;
+color: #f7497d;
+font-size: 12px;
+font-weight: bold;
+
+ }
+ .challange-hacker{
+    
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #9bbfde;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+}
+ .challange-hipster{
+    
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #e88993;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+}
+.challange-hustler{
+    
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fbd372;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+}
+.challange-visionary{
+    
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color:#8fc78f;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+.errorText{
+    color:red;
+}

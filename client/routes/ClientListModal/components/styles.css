@@ -1,0 +1,57 @@
+th{
+     background-color: #cccccc;
+}
+
+table {
+     font-family: arial, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+}
+   
+td, th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 10px;
+     border-bottom: 2px solid #dddddd;
+     font-weight: 400;
+     font-size: 12px;
+}
+
+ .tdthClientListModalEng {
+    width: 80%;
+}
+
+.tdthClientListModalDutch {
+  width: 73%;
+}
+
+.checkboxBtn-clientlistmodal{
+  /* margin-left: 30px; */
+  margin-top: -5px;
+}
+
+.clientlistModal-cancelBtn{
+  float: right;
+  border-radius: 0;
+  background-color: #ff6633;
+  color: #fff;
+  /* width: 100px; */
+}
+.clientlistModal-cancelBtn:hover{
+  color: #fff;
+  background-color: green;
+}
+
+.clientlistModal-title{
+  font-size: 20px;
+}
+
+.clientlistModal-FirstRow{
+  margin-top: 2%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.clientnameLbl{
+  width: 150px;
+}
+
